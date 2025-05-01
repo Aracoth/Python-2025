@@ -1,4 +1,7 @@
 class Animal:
+    # this is a constructor
+    def __init__(self):
+        self.age = 1
 
     def eat(self):
         print("eat")
@@ -14,6 +17,7 @@ class Mammal(Animal):
         print("walk")
 
 
+# Fish has inherited: Animal class
 class Fish(Animal):
     def swim(self):
         print("swim")
@@ -21,4 +25,4 @@ class Fish(Animal):
 
 m = Mammal()
 m.eat()
-f = Fish().__class__.__name__
+print(m.age)
