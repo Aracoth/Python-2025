@@ -13,3 +13,5 @@ with open("__init__.py", "r") as file:
     ...
 
 print(path.read_text())
+path.write_text("....")
+path.write_bytes()
