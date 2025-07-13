@@ -1,0 +1,21 @@
+from random import randint
+
+
+def dice_game():
+    print("Type 'roll' to play or 'quit' to exit")
+    dice_roll = input("> ").lower()
+    result = []
+    if dice_roll == "roll":
+        result = randint(1, 100)
+        print(f"You rolled a {result}!")
+        if result >= 77:
+            print("Congratulations, you have won!")
+        else:
+            print("You lose!")
+    elif dice_roll == "quit":
+        print("Game Ended")
+    else:
+        print("Please type 'roll' to play, or 'quit' to exit.")
+
+
+dice_game()

@@ -1,0 +1,17 @@
+ pip install pipenv: install pipenv
+
+ pipenv --venv: locate virtual environment path
+
+ pipenv 'module' to install module to virtual environment
+
+ pipenv shell to launch virtual environment
+
+ pipenv install: creates environment from pipfile with all dependancies
+
+ pipenv install --ignore-pipfile: ignores pipfile & uses pipfile.lock
+
+ pipenv graph: graph of all dependancies 
+
+ pipenv update --outdated: updates outdated packages
+
+ python.defaultInterpreterPath: change in settings to virtual environment
